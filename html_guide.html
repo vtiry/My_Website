@@ -3,91 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Syntax Guide</title>
-
+    <title>HTML Syntax Guide for Beginners</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>HTML Syntax & Possibilities</h1>
-        <p>A beginner-friendly explanation of how HTML works.</p>
-    </header>
+<header>
+    <h1>HTML Guide for Complete Beginners</h1>
+    <p>This page explains every important HTML concept in simple language: what it is, what it means, and what you should do with it.</p>
+</header>
 
-    <main>
+<main>
 
-        <section>
-            <h2>What is HTML?</h2>
-            <p>
-                HTML (HyperText Markup Language) is the language used to build the structure of web pages.
-                It consists of elements called <strong>tags</strong>.
-            </p>
-        </section>
+    <!-- WHAT IS HTML -->
+    <section>
+        <h2>🔹 What is HTML?</h2>
+        <p><strong>Meaning:</strong> HTML stands for <em>HyperText Markup Language</em>.</p>
+        <p><strong>Purpose:</strong> It builds the <u>structure</u> of every web page.</p>
+        <p><strong>You should:</strong> Use HTML to place text, images, buttons, links, forms, videos — everything you see on a webpage.</p>
+    </section>
 
-        <section>
-            <h2>Basic HTML Structure</h2>
+
+    <!-- BASIC STRUCTURE -->
+    <section>
+        <h2>🔹 Basic Page Structure</h2>
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    Page content goes here.
+    Content here
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-        </section>
+        <p><strong>What it means:</strong></p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> tells the browser this is an HTML5 document.</li>
+            <li><code>&lt;html&gt;</code> the whole webpage.</li>
+            <li><code>&lt;head&gt;</code> invisible stuff: title, CSS, meta.</li>
+            <li><code>&lt;body&gt;</code> visible content.</li>
+        </ul>
+        <p><strong>You should:</strong> Always start every HTML file with this structure.</p>
+    </section>
 
-        <section>
-            <h2>Common HTML Tags</h2>
 
-            <h3>1. Headings</h3>
-            <pre>
+    <!-- HEAD -->
+    <section>
+        <h2>🔹 The &lt;head&gt; Area</h2>
+<pre>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre>
+
+        <p><strong>What it means:</strong></p>
+        <ul>
+            <li><code>&lt;meta&gt;</code> = page settings.</li>
+            <li><code>viewport</code> = makes mobile screens work.</li>
+            <li><code>&lt;title&gt;</code> = browser tab title.</li>
+            <li><code>&lt;link&gt;</code> = “attach my CSS file”.</li>
+        </ul>
+
+        <p><strong>You should:</strong>  
+        Keep your CSS links and meta tags in the <code>&lt;head&gt;</code> section.</p>
+    </section>
+
+
+    <!-- TEXT -->
+    <section>
+        <h2>🔹 Text Elements</h2>
+
+        <h3>Headings</h3>
+<pre>
 &lt;h1&gt;Main Title&lt;/h1&gt;
-&lt;h2&gt;Subtitle&lt;/h2&gt;
-&lt;h3&gt;Section Heading&lt;/h3&gt;
-            </pre>
+&lt;h2&gt;Section Title&lt;/h2&gt;
+</pre>
+        <p><strong>Meaning:</strong> <code>h1</code> is the most important title, <code>h6</code> is the least.</p>
+        <p><strong>You should:</strong> Have only ONE <code>&lt;h1&gt;</code> per page.</p>
 
-            <h3>2. Paragraphs</h3>
-            <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <h3>Paragraphs</h3>
+<pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <p><strong>You should:</strong> Put normal text inside <code>&lt;p&gt;</code> tags.</p>
 
-            <h3>3. Links</h3>
-            <pre>&lt;a href="page.html"&gt;Click Me&lt;/a&gt;</pre>
+        <h3>Text Formatting</h3>
+<pre>
+&lt;strong&gt;bold text&lt;/strong&gt;
+&lt;em&gt;italic text&lt;/em&gt;
+&lt;br&gt; line break
+</pre>
+        <p><strong>You should:</strong> Use these to highlight important information.</p>
+    </section>
 
-            <h3>4. Images</h3>
-            <pre>&lt;img src="image.jpg" alt="description"&gt;</pre>
 
-            <h3>5. Lists</h3>
-            <pre>
+    <!-- LINKS -->
+    <section>
+        <h2>🔹 Links</h2>
+<pre>
+&lt;a href="page.html"&gt;Go somewhere&lt;/a&gt;
+</pre>
+        <p><strong>Meaning:</strong> <code>&lt;a&gt;</code> = anchor = link.</p>
+        <p><strong>You should:</strong> Use links to connect pages or go to external websites.</p>
+    </section>
+
+
+    <!-- IMAGES -->
+    <section>
+        <h2>🔹 Images</h2>
+<pre>
+&lt;img src="photo.jpg" alt="A description"&gt;
+</pre>
+        <p><strong>Meaning:</strong> Shows an image on your page.</p>
+        <p><strong>You should:</strong> Always write <code>alt</code> text for accessibility and SEO.</p>
+    </section>
+
+
+    <!-- LISTS -->
+    <section>
+        <h2>🔹 Lists</h2>
+
+        <h3>Unordered (bullets)</h3>
+<pre>
 &lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item&lt;/li&gt;
 &lt;/ul&gt;
+</pre>
 
+        <h3>Ordered (numbers)</h3>
+<pre>
 &lt;ol&gt;
-    &lt;li&gt;First&lt;/li&gt;
-    &lt;li&gt;Second&lt;/li&gt;
+    &lt;li&gt;First item&lt;/li&gt;
 &lt;/ol&gt;
-            </pre>
+</pre>
 
-            <h3>6. Div & Span (containers)</h3>
-            <pre>
-&lt;div&gt;Block container&lt;/div&gt;
-&lt;span&gt;Inline container&lt;/span&gt;
-            </pre>
+        <p><strong>You should:</strong> Use lists for steps, menus, features, etc.</p>
+    </section>
 
-            <h3>7. Inputs & Forms</h3>
-            <pre>
+
+    <!-- TABLES -->
+    <section>
+        <h2>🔹 Tables</h2>
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+        <p><strong>Meaning:</strong> Tables organize data in rows and columns.</p>
+        <p><strong>You should:</strong> Use them for structured information (not layout).</p>
+    </section>
+
+
+    <!-- FORMS -->
+    <section>
+        <h2>🔹 Forms (User Input)</h2>
+<pre>
 &lt;form&gt;
     &lt;input type="text" placeholder="Your name"&gt;
-    &lt;button&gt;Submit&lt;/button&gt;
+    &lt;button&gt;Send&lt;/button&gt;
 &lt;/form&gt;
-            </pre>
-        </section>
+</pre>
 
-        <p><a href="index.html">← Back to main page</a></p>
-    </main>
+        <p><strong>Meaning:</strong> Forms collect information from users.</p>
+        <p><strong>You should:</strong> Use forms for contact pages, login, signup, etc.</p>
+    </section>
+
+
+    <!-- SEMANTIC -->
+    <section>
+        <h2>🔹 Semantic Elements</h2>
+<pre>
+&lt;header&gt; &lt;nav&gt; &lt;main&gt; &lt;section&gt; &lt;footer&gt;
+</pre>
+        <p><strong>Meaning:</strong> These tags describe the purpose of content.</p>
+        <p><strong>You should:</strong> Use them so your page is well-structured and Google-friendly.</p>
+    </section>
+
+
+    <!-- MEDIA -->
+    <section>
+        <h2>🔹 Audio & Video</h2>
+<pre>
+&lt;video controls&gt;&lt;/video&gt;
+&lt;audio controls&gt;&lt;/audio&gt;
+</pre>
+        <p><strong>You should:</strong> Embed videos or sounds directly on a webpage when needed.</p>
+    </section>
+
+
+    <!-- DIV & SPAN -->
+    <section>
+        <h2>🔹 Div and Span</h2>
+<pre>
+&lt;div&gt;Block container&lt;/div&gt;
+&lt;span&gt;Inline container&lt;/span&gt;
+</pre>
+        <p><strong>Meaning:</strong> These are containers used for layout and styling.</p>
+        <p><strong>You should:</strong> Use <code>div</code> to group blocks of content.</p>
+    </section>
+
+
+    <!-- COMMENTS -->
+    <section>
+        <h2>🔹 Comments</h2>
+<pre>
+&lt;!-- This is a comment --&gt;
+</pre>
+        <p><strong>Meaning:</strong> Notes that are invisible in the browser.</p>
+        <p><strong>You should:</strong> Use comments to explain your code.</p>
+    </section>
+
+
+    <!-- SPECIAL CHARACTERS -->
+    <section>
+        <h2>🔹 Special HTML Characters</h2>
+<pre>
+&lt; = &amp;lt;
+&gt; = &amp;gt;
+&amp; = &amp;amp;
+© = &amp;copy;
+</pre>
+        <p><strong>You should:</strong> Use these when writing characters that conflict with HTML syntax.</p>
+    </section>
+
+    <p><a href="index.html">← Back to homepage</a></p>
+
+</main>
 
 </body>
 </html>

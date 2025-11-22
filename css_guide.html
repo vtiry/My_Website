@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Guide for Beginners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Guide for Complete Beginners</h1>
+    <p>This page explains CSS in simple language — what it is, how it works, and what you should do with it.</p>
+</header>
+
+<main>
+
+    <p><a href="css_examples.html">See CSS examples in action →</a></p>
+
+<!-- WHAT IS CSS -->
+<section>
+    <h2>🔹 What is CSS?</h2>
+    <p><strong>Meaning:</strong> CSS stands for <em>Cascading Style Sheets</em>.</p>
+    <p><strong>Purpose:</strong> It controls how your webpage looks: colors, sizes, layout, fonts, spacing.</p>
+    <p><strong>You should:</strong> Use CSS to make your webpage beautiful and readable.</p>
+</section>
+
+
+<!-- HOW CSS IS CONNECTED -->
+<section>
+    <h2>🔹 How to Connect CSS to HTML</h2>
+<pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre>
+    <p><strong>Meaning:</strong> This line tells your HTML to load the CSS file.</p>
+    <p><strong>You should:</strong> Always put this inside <code>&lt;head&gt;</code> in your HTML.</p>
+</section>
+
+
+<!-- SELECTORS -->
+<section>
+    <h2>🔹 CSS Selectors</h2>
+    <p><strong>Meaning:</strong> Selectors tell CSS WHICH element to style.</p>
+
+    <h3>Element selector</h3>
+<pre>
+p {
+    color: blue;
+}
+</pre>
+    <p><strong>You should:</strong> Use this to style all elements of one type.</p>
+
+    <h3>Class selector</h3>
+<pre>
+.myClass {
+    background: yellow;
+}
+</pre>
+    <p><strong>You should:</strong> Use classes to style groups of items.</p>
+
+    <h3>ID selector</h3>
+<pre>
+#header {
+    padding: 20px;
+}
+</pre>
+    <p><strong>You should:</strong> Use IDs for unique items (only 1 per page).</p>
+</section>
+
+
+<!-- COLORS -->
+<section>
+    <h2>🔹 Colors</h2>
+<pre>
+color: red;
+background-color: #222;
+border-color: rgb(0, 200, 100);
+</pre>
+    <p><strong>You should:</strong> Use color names for learning, hex or rgb when precise.</p>
+</section>
+
+
+<!-- FONTS -->
+<section>
+    <h2>🔹 Fonts & Text</h2>
+<pre>
+font-size: 20px;
+font-family: Arial, sans-serif;
+font-weight: bold;
+text-align: center;
+line-height: 1.5;
+</pre>
+    <p><strong>You should:</strong> Use readable sizes (16–18px) and clean fonts.</p>
+</section>
+
+
+<!-- BOX MODEL -->
+<section>
+    <h2>🔹 The Box Model (VERY important!)</h2>
+
+<pre>
+margin: 10px;   /* space outside the box */
+padding: 20px;  /* space inside the box */
+border: 1px solid black;
+</pre>
+
+    <p><strong>Meaning:</strong> Every HTML element is a “box”.</p>
+    <p><strong>You should:</strong> Master margin and padding — they control spacing!</p>
+
+    <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model-standard-light.svg" alt="Box model diagram" style="max-width:100%; border:1px solid #ccc;">
+</section>
+
+
+<!-- WIDTH HEIGHT -->
+<section>
+    <h2>🔹 Width & Height</h2>
+<pre>
+width: 300px;
+height: 200px;
+max-width: 100%;
+</pre>
+    <p><strong>You should:</strong> Use <code>max-width: 100%</code> to make content responsive.</p>
+</section>
+
+
+<!-- DISPLAY -->
+<section>
+    <h2>🔹 Display</h2>
+<pre>
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+</pre>
+    <p><strong>This determines how elements behave:</strong></p>
+    <ul>
+        <li><strong>block</strong> → takes full width (div, p, h1)</li>
+        <li><strong>inline</strong> → text-level (span, a)</li>
+        <li><strong>inline-block</strong> → inline but keeps width/height</li>
+        <li><strong>none</strong> → hides element</li>
+    </ul>
+</section>
+
+
+<!-- FLEXBOX -->
+<section>
+    <h2>🔹 Flexbox (Modern layout tool)</h2>
+    <p>Flexbox helps you align items easily.</p>
+<pre>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</pre>
+    <p><strong>You should:</strong> Learn Flexbox early — developers use it everywhere.</p>
+</section>
+
+
+<!-- GRID -->
+<section>
+    <h2>🔹 CSS Grid (Powerful layout system)</h2>
+<pre>
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+</pre>
+    <p><strong>You should:</strong> Use Grid for multi-column layouts.</p>
+</section>
+
+
+<!-- BORDERS RADIUS -->
+<section>
+    <h2>🔹 Borders & Radius</h2>
+<pre>
+border: 2px solid black;
+border-radius: 10px;
+</pre>
+    <p><strong>You should:</strong> Radius makes rounded corners.</p>
+</section>
+
+
+<!-- SHADOW -->
+<section>
+    <h2>🔹 Shadows</h2>
+<pre>
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+</pre>
+    <p><strong>You should:</strong> Use shadows to create modern card designs.</p>
+</section>
+
+
+<!-- POSITION -->
+<section>
+    <h2>🔹 Position</h2>
+<pre>
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+</pre>
+
+    <ul>
+        <li><strong>static</strong> – default</li>
+        <li><strong>relative</strong> – used as a container for absolute elements</li>
+        <li><strong>absolute</strong> – can be placed anywhere</li>
+        <li><strong>fixed</strong> – sticks to screen (like fixed header)</li>
+    </ul>
+
+    <p><strong>You should:</strong> Use positioning rarely; Flexbox/Grid are better for layout.</p>
+</section>
+
+
+<!-- BACKGROUND -->
+<section>
+    <h2>🔹 Backgrounds</h2>
+<pre>
+background-image: url('photo.jpg');
+background-size: cover;
+background-position: center;
+</pre>
+    <p><strong>You should:</strong> Use <code>cover</code> to make background images responsive.</p>
+</section>
+
+
+<!-- COMMENTS -->
+<section>
+    <h2>🔹 Comments in CSS</h2>
+<pre>
+/* This is a comment */
+</pre>
+    <p><strong>You should:</strong> Use comments to explain complex styles.</p>
+</section>
+
+
+<p><a href="index.html">← Back to home</a></p>
+
+</main>
+
+</body>
+</html>
